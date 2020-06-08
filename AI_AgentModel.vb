@@ -56,17 +56,15 @@ Public Class AI_AgentModel
     ''' <param name="_userInput"></param>
     ''' <remarks></remarks>
     Private Function ExecutePlugins(ByVal _userInput As String, ByRef Plugins As ICollection(Of IPlugin)) As String
-        Dim responded = False
-
-
         Dim Str As String = ""
 
         'Plugins
         If Plugins IsNot Nothing Then
             For Each NewPlugin In Plugins
+                NewPlugin.GetResponse(_userInput)
                 If IsNotTest(NewPlugin.Response) = True Then
                     If NewPlugin.Response <> "" Or NewPlugin.Response <> " " Then
-                        Str = LCase(RTrim(LTrim(Str)) & NewPlugin.Response)
+                        Str &= LCase(RTrim(LTrim(Str)) & NewPlugin.Response)
                     End If
                 Else
                 End If
