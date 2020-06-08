@@ -44,8 +44,8 @@ Public Class Sample_Plugin_Chatbot_Tutorial
     End Property
 
     Public Function GetResponse(UserInput As String) As Boolean Implements IPlugin.GetResponse
-        Dim NewResponse As String = "HI - Here we will Design its brain function"
-
+        Dim NewResponse As String = ""
+        If UCase(UserInput) = "HI" Then NewResponse = "YO BRO"
         If NewResponse IsNot Nothing Then
             Response = NewResponse
             Return True

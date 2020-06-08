@@ -19,7 +19,11 @@ Public Class AI_AgentModel
     ''' <param name="UserInput"></param>
     ''' <returns></returns>
     Public Function GET_RESPONSE(ByRef UserInput As String) As String
+        'Get External Responses
         GET_RESPONSE = GetPluginResponse(UserInput, PreviousUserInput, PreviousResponse)
+        'IF NO RESPONSE TRY -  Question Answer Database
+        If GET_RESPONSE = "" Then GetQAResponse(UserInput, GET_RESPONSE)
+        'IF No Response Fallback Response
         If GET_RESPONSE = "" Then GET_RESPONSE = "Excuse me? Please, Rephrase?"
     End Function
     Private Function GetPluginResponse(ByRef UserInput As String, ByRef PrevUSerInput As String, ByRef PrevResponse As String) As String
