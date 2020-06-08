@@ -20,6 +20,7 @@ Public Class AI_AgentModel
     ''' <returns></returns>
     Public Function GET_RESPONSE(ByRef UserInput As String) As String
         GET_RESPONSE = GetPluginResponse(UserInput, PreviousUserInput, PreviousResponse)
+        If GET_RESPONSE = "" Then GET_RESPONSE = "Excuse me? Please, Rephrase?"
     End Function
     Private Function GetPluginResponse(ByRef UserInput As String, ByRef PrevUSerInput As String, ByRef PrevResponse As String) As String
         GetPluginResponse = ExecutePlugins(UserInput, ScanPlugins)

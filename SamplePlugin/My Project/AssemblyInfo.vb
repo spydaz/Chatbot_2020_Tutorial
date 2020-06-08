@@ -8,17 +8,17 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("Chatbot_2020_Tutorial")>
-<Assembly: AssemblyDescription("Basic Chat bot Framwork (With Plugins)")>
-<Assembly: AssemblyCompany("SpydazWeb AI")>
-<Assembly: AssemblyProduct("SpydazWeb AI")>
-<Assembly: AssemblyCopyright("SpydazWeb AI  Copyright ©  2020")>
-<Assembly: AssemblyTrademark("SpydazWeb AI  TM ©  2020")>
+<Assembly: AssemblyTitle("SamplePlugin")>
+<Assembly: AssemblyDescription("")>
+<Assembly: AssemblyCompany("")>
+<Assembly: AssemblyProduct("SamplePlugin")>
+<Assembly: AssemblyCopyright("Copyright ©  2020")>
+<Assembly: AssemblyTrademark("")>
 
-<Assembly: ComVisible(True)>
+<Assembly: ComVisible(False)>
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("826dca42-eeea-4bfe-8f42-bfe8ea2371c9")>
+<Assembly: Guid("574877b9-4ab9-49fe-bb71-b503c49e7e7a")>
 
 ' Version information for an assembly consists of the following four values:
 '

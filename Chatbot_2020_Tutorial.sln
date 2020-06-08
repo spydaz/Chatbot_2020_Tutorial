@@ -7,6 +7,8 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Chatbot_2020_Tutorial", "Ch
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AI_Contracts", "AI_Contracts\AI_Contracts.vbproj", "{FFD99FAF-EAE8-41AA-BEAA-66CEDF5C5951}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SamplePlugin", "SamplePlugin\SamplePlugin.vbproj", "{06547035-4097-49D3-AE77-9FEC47253CEE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{FFD99FAF-EAE8-41AA-BEAA-66CEDF5C5951}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFD99FAF-EAE8-41AA-BEAA-66CEDF5C5951}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFD99FAF-EAE8-41AA-BEAA-66CEDF5C5951}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06547035-4097-49D3-AE77-9FEC47253CEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06547035-4097-49D3-AE77-9FEC47253CEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06547035-4097-49D3-AE77-9FEC47253CEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06547035-4097-49D3-AE77-9FEC47253CEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
