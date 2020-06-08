@@ -85,6 +85,11 @@
     <Compile Include="Form_Chat_UI.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="MindQADataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MindQADataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -124,6 +129,17 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="MindQADataSet.xsc">
+      <DependentUpon>MindQADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MindQADataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MindQADataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MindQADataSet.xss">
+      <DependentUpon>MindQADataSet.xsd</DependentUpon>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -144,6 +160,9 @@
   <ItemGroup>
     <Content Include="Icon_AI_Brain.ico" />
     <Content Include="Icon_SpydazBrain.ico" />
+    <Content Include="MindQA.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Plugins\AI_Contracts.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
