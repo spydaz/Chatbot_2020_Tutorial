@@ -512,6 +512,7 @@ Partial Class FormPluginManager
         '
         'GroupBox8
         '
+        Me.GroupBox8.BackColor = System.Drawing.Color.Black
         Me.GroupBox8.Dock = System.Windows.Forms.DockStyle.Right
         Me.GroupBox8.Location = New System.Drawing.Point(949, 3)
         Me.GroupBox8.Name = "GroupBox8"
