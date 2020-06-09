@@ -46,7 +46,30 @@
                 MakeEmotionalResponse = "" & LCase(FoundEmotion) & " "
         End Select
     End Function
-
+    ''' <summary>
+    ''' Used to make a Emotional response fromt he currently held Emotion
+    ''' </summary>
+    ''' <returns></returns>
+    Public Function MakeEmotionalResponse() As String
+        Dim FoundEmotion As String = CurrentStateStr
+        MakeEmotionalResponse = ""
+        Randomize()
+        Dim C As Short = Int(Rnd() * 6 + 1)
+        Select Case C
+            Case 1
+                MakeEmotionalResponse = "I detect emotion in your tone, you are feeling " & LCase(FoundEmotion) & " perhaps"
+            Case 2
+                MakeEmotionalResponse = "Are you feeling " & LCase(FoundEmotion) & " ?"
+            Case 3
+                MakeEmotionalResponse = "Perhaps ? you can tell me more about why you are feeling ? " & LCase(FoundEmotion)
+            Case 4
+                MakeEmotionalResponse = "Detecting " & LCase(FoundEmotion) & " maybe?"
+            Case 5
+                MakeEmotionalResponse = "feeling a bit " & LCase(FoundEmotion) & " ?"
+            Case 6
+                MakeEmotionalResponse = "" & LCase(FoundEmotion) & " "
+        End Select
+    End Function
     Private Sub SetEmotionState(ByRef UserInput As String)
         'Reset Counters
         StateChanged = False

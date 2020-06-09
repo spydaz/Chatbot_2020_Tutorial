@@ -1,15 +1,18 @@
 ﻿Imports System.Runtime.Remoting.Messaging
 Imports AI_Contracts
 Public Class AI_AgentModel
+    'ShortTerm Memory
     Private PreviousResponses As List(Of String)
     Private PreviousUserInputs As List(Of String)
+
+    'Working Memory 
     Public PreviousResponse As String
     Public PreviousUserInput As String
     Public UserInput As String
     Public Response As String
+
     Private PLUGIN_FOLDER As String = Application.StartupPath & "\Plugins"
-
-
+    Public Sentiment As New Emotional_State
 
     'Responses Are Genearated Externally
 #Region "Responses"
@@ -23,8 +26,16 @@ Public Class AI_AgentModel
         GET_RESPONSE = GetPluginResponse(UserInput, PreviousUserInput, PreviousResponse)
         'IF NO RESPONSE TRY -  Question Answer Database
         If GET_RESPONSE = "" Then GetQAResponse(UserInput, GET_RESPONSE)
+        'TRY EMOTIONAL RESPONSE
+        If GET_RESPONSE = "" And Sentiment.NewEmotionDetected(UserInput) = True Then Sentiment.MakeEmotionalResponse()
         'IF No Response Fallback Response
         If GET_RESPONSE = "" Then GET_RESPONSE = "Excuse me? Please, Rephrase?"
+
+        'MainTain History
+        PreviousUserInput = UserInput
+        PreviousResponse = GET_RESPONSE
+        PreviousUserInputs.Add(PreviousUserInput)
+        PreviousResponses.Add(PreviousResponse)
     End Function
     Private Function GetPluginResponse(ByRef UserInput As String, ByRef PrevUSerInput As String, ByRef PrevResponse As String) As String
         GetPluginResponse = ExecutePlugins(UserInput, ScanPlugins)
