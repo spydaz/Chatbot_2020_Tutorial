@@ -1,7 +1,7 @@
 ﻿
 
 
-Public Interface Emotion
+Public Interface IEmotion
 
     ReadOnly Property Detectors As List(Of String)
 
@@ -25,23 +25,23 @@ Public Interface Emotion
 End Interface
 
 Public Class EmotionAngry
-    Implements Emotion
+    Implements IEmotion
 
     Private DetectorLst As New List(Of String)
 
-    Public ReadOnly Property Detectors As List(Of String) Implements Emotion.Detectors
+    Public ReadOnly Property Detectors As List(Of String) Implements IEmotion.Detectors
         Get
             Return DetectorLst
         End Get
     End Property
 
-    Public ReadOnly Property Name As String Implements Emotion.Name
+    Public ReadOnly Property Name As String Implements IEmotion.Name
         Get
             Return "Angry"
         End Get
     End Property
 
-    Public ReadOnly Property Type As EmotionType Implements Emotion.Type
+    Public ReadOnly Property Type As EmotionType Implements IEmotion.Type
         Get
             Return EmotionType.Angry
         End Get
@@ -135,11 +135,11 @@ Public Class EmotionAngry
 
     End Sub
 
-    Public Sub AddDetector(ByRef Detector As String) Implements Emotion.AddDetector
+    Public Sub AddDetector(ByRef Detector As String) Implements IEmotion.AddDetector
         DetectorLst.Add(UCase(Detector))
     End Sub
 
-    Public Function Detect(ByRef UserInput As String) As Boolean Implements Emotion.Detect
+    Public Function Detect(ByRef UserInput As String) As Boolean Implements IEmotion.Detect
         Dim found As Boolean = False
         For Each Detector As String In Detectors
             If UCase(UserInput).Contains(UCase(Detector)) = True Then
@@ -154,23 +154,23 @@ Public Class EmotionAngry
 End Class
 
 Public Class EmotionConcerned
-    Implements Emotion
+    Implements IEmotion
 
     Private DetectorLst As New List(Of String)
 
-    Public ReadOnly Property Detectors As List(Of String) Implements Emotion.Detectors
+    Public ReadOnly Property Detectors As List(Of String) Implements IEmotion.Detectors
         Get
             Return DetectorLst
         End Get
     End Property
 
-    Public ReadOnly Property Name As String Implements Emotion.Name
+    Public ReadOnly Property Name As String Implements IEmotion.Name
         Get
             Return "Concerned"
         End Get
     End Property
 
-    Public ReadOnly Property Type As EmotionType Implements Emotion.Type
+    Public ReadOnly Property Type As EmotionType Implements IEmotion.Type
         Get
             Return EmotionType.Concerned
         End Get
@@ -308,11 +308,11 @@ Public Class EmotionConcerned
 
     End Sub
 
-    Public Sub AddDetector(ByRef Detector As String) Implements Emotion.AddDetector
+    Public Sub AddDetector(ByRef Detector As String) Implements IEmotion.AddDetector
         DetectorLst.Add(UCase(Detector))
     End Sub
 
-    Public Function Detect(ByRef UserInput As String) As Boolean Implements Emotion.Detect
+    Public Function Detect(ByRef UserInput As String) As Boolean Implements IEmotion.Detect
         Dim found As Boolean = False
         For Each Detector As String In Detectors
             If UCase(UserInput).Contains(UCase(Detector)) = True Then
@@ -327,23 +327,23 @@ Public Class EmotionConcerned
 End Class
 
 Public Class EmotionCurious
-    Implements Emotion
+    Implements IEmotion
 
     Private DetectorLst As New List(Of String)
 
-    Public ReadOnly Property Detectors As List(Of String) Implements Emotion.Detectors
+    Public ReadOnly Property Detectors As List(Of String) Implements IEmotion.Detectors
         Get
             Return DetectorLst
         End Get
     End Property
 
-    Public ReadOnly Property Name As String Implements Emotion.Name
+    Public ReadOnly Property Name As String Implements IEmotion.Name
         Get
             Return "Curious"
         End Get
     End Property
 
-    Public ReadOnly Property Type As EmotionType Implements Emotion.Type
+    Public ReadOnly Property Type As EmotionType Implements IEmotion.Type
         Get
             Return EmotionType.curious
         End Get
@@ -398,11 +398,11 @@ Public Class EmotionCurious
 
     End Sub
 
-    Public Sub AddDetector(ByRef Detector As String) Implements Emotion.AddDetector
+    Public Sub AddDetector(ByRef Detector As String) Implements IEmotion.AddDetector
         DetectorLst.Add(UCase(Detector))
     End Sub
 
-    Public Function Detect(ByRef UserInput As String) As Boolean Implements Emotion.Detect
+    Public Function Detect(ByRef UserInput As String) As Boolean Implements IEmotion.Detect
         Dim found As Boolean = False
         For Each Detector As String In Detectors
             If UCase(UserInput).Contains(UCase(Detector)) = True Then
@@ -417,23 +417,23 @@ Public Class EmotionCurious
 End Class
 
 Public Class EmotionFailure
-    Implements Emotion
+    Implements IEmotion
 
     Private DetectorLst As New List(Of String)
 
-    Public ReadOnly Property Detectors As List(Of String) Implements Emotion.Detectors
+    Public ReadOnly Property Detectors As List(Of String) Implements IEmotion.Detectors
         Get
             Return DetectorLst
         End Get
     End Property
 
-    Public ReadOnly Property Name As String Implements Emotion.Name
+    Public ReadOnly Property Name As String Implements IEmotion.Name
         Get
             Return "Failure"
         End Get
     End Property
 
-    Public ReadOnly Property Type As EmotionType Implements Emotion.Type
+    Public ReadOnly Property Type As EmotionType Implements IEmotion.Type
         Get
             Return EmotionType.Failure
         End Get
@@ -477,11 +477,11 @@ Public Class EmotionFailure
 
     End Sub
 
-    Public Sub AddDetector(ByRef Detector As String) Implements Emotion.AddDetector
+    Public Sub AddDetector(ByRef Detector As String) Implements IEmotion.AddDetector
         DetectorLst.Add(UCase(Detector))
     End Sub
 
-    Public Function Detect(ByRef UserInput As String) As Boolean Implements Emotion.Detect
+    Public Function Detect(ByRef UserInput As String) As Boolean Implements IEmotion.Detect
         Dim found As Boolean = False
         For Each Detector As String In Detectors
             If UCase(UserInput).Contains(UCase(Detector)) = True Then
@@ -496,23 +496,23 @@ Public Class EmotionFailure
 End Class
 
 Public Class EmotionFear
-    Implements Emotion
+    Implements IEmotion
 
     Private DetectorLst As New List(Of String)
 
-    Public ReadOnly Property Detectors As List(Of String) Implements Emotion.Detectors
+    Public ReadOnly Property Detectors As List(Of String) Implements IEmotion.Detectors
         Get
             Return DetectorLst
         End Get
     End Property
 
-    Public ReadOnly Property Name As String Implements Emotion.Name
+    Public ReadOnly Property Name As String Implements IEmotion.Name
         Get
             Return "Fear"
         End Get
     End Property
 
-    Public ReadOnly Property Type As EmotionType Implements Emotion.Type
+    Public ReadOnly Property Type As EmotionType Implements IEmotion.Type
         Get
             Return EmotionType.Fear
         End Get
@@ -563,11 +563,11 @@ Public Class EmotionFear
 
     End Sub
 
-    Public Sub AddDetector(ByRef Detector As String) Implements Emotion.AddDetector
+    Public Sub AddDetector(ByRef Detector As String) Implements IEmotion.AddDetector
         DetectorLst.Add(UCase(Detector))
     End Sub
 
-    Public Function Detect(ByRef UserInput As String) As Boolean Implements Emotion.Detect
+    Public Function Detect(ByRef UserInput As String) As Boolean Implements IEmotion.Detect
         Dim found As Boolean = False
         For Each Detector As String In Detectors
             If UCase(UserInput).Contains(UCase(Detector)) = True Then
@@ -582,23 +582,23 @@ Public Class EmotionFear
 End Class
 
 Public Class EmotionGreatful
-    Implements Emotion
+    Implements IEmotion
 
     Private DetectorLst As New List(Of String)
 
-    Public ReadOnly Property Detectors As List(Of String) Implements Emotion.Detectors
+    Public ReadOnly Property Detectors As List(Of String) Implements IEmotion.Detectors
         Get
             Return DetectorLst
         End Get
     End Property
 
-    Public ReadOnly Property Name As String Implements Emotion.Name
+    Public ReadOnly Property Name As String Implements IEmotion.Name
         Get
             Return "Greatful"
         End Get
     End Property
 
-    Public ReadOnly Property Type As EmotionType Implements Emotion.Type
+    Public ReadOnly Property Type As EmotionType Implements IEmotion.Type
         Get
             Return EmotionType.Greatful
         End Get
@@ -654,11 +654,11 @@ Public Class EmotionGreatful
 
     End Sub
 
-    Public Sub AddDetector(ByRef Detector As String) Implements Emotion.AddDetector
+    Public Sub AddDetector(ByRef Detector As String) Implements IEmotion.AddDetector
         DetectorLst.Add(UCase(Detector))
     End Sub
 
-    Public Function Detect(ByRef UserInput As String) As Boolean Implements Emotion.Detect
+    Public Function Detect(ByRef UserInput As String) As Boolean Implements IEmotion.Detect
         Dim found As Boolean = False
         For Each Detector As String In Detectors
             If UCase(UserInput).Contains(UCase(Detector)) = True Then
@@ -673,23 +673,23 @@ Public Class EmotionGreatful
 End Class
 
 Public Class EmotionHappy
-    Implements Emotion
+    Implements IEmotion
 
     Private DetectorLst As New List(Of String)
 
-    Public ReadOnly Property Detectors As List(Of String) Implements Emotion.Detectors
+    Public ReadOnly Property Detectors As List(Of String) Implements IEmotion.Detectors
         Get
             Return DetectorLst
         End Get
     End Property
 
-    Public ReadOnly Property Name As String Implements Emotion.Name
+    Public ReadOnly Property Name As String Implements IEmotion.Name
         Get
             Return "Happy"
         End Get
     End Property
 
-    Public ReadOnly Property Type As EmotionType Implements Emotion.Type
+    Public ReadOnly Property Type As EmotionType Implements IEmotion.Type
         Get
             Return EmotionType.Happy
         End Get
@@ -769,11 +769,11 @@ Public Class EmotionHappy
         DetectorLst.Add(" VICTORY ")
     End Sub
 
-    Public Sub AddDetector(ByRef Detector As String) Implements Emotion.AddDetector
+    Public Sub AddDetector(ByRef Detector As String) Implements IEmotion.AddDetector
         DetectorLst.Add(UCase(Detector))
     End Sub
 
-    Public Function Detect(ByRef UserInput As String) As Boolean Implements Emotion.Detect
+    Public Function Detect(ByRef UserInput As String) As Boolean Implements IEmotion.Detect
         Dim found As Boolean = False
         For Each Detector As String In Detectors
             If UCase(UserInput).Contains(UCase(Detector)) = True Then
@@ -788,23 +788,23 @@ Public Class EmotionHappy
 End Class
 
 Public Class EmotionJealous
-    Implements Emotion
+    Implements IEmotion
 
     Private DetectorLst As New List(Of String)
 
-    Public ReadOnly Property Detectors As List(Of String) Implements Emotion.Detectors
+    Public ReadOnly Property Detectors As List(Of String) Implements IEmotion.Detectors
         Get
             Return DetectorLst
         End Get
     End Property
 
-    Public ReadOnly Property Name As String Implements Emotion.Name
+    Public ReadOnly Property Name As String Implements IEmotion.Name
         Get
             Return "Jealous"
         End Get
     End Property
 
-    Public ReadOnly Property Type As EmotionType Implements Emotion.Type
+    Public ReadOnly Property Type As EmotionType Implements IEmotion.Type
         Get
             Return EmotionType.Jealous
         End Get
@@ -849,11 +849,11 @@ Public Class EmotionJealous
 
     End Sub
 
-    Public Sub AddDetector(ByRef Detector As String) Implements Emotion.AddDetector
+    Public Sub AddDetector(ByRef Detector As String) Implements IEmotion.AddDetector
         DetectorLst.Add(UCase(Detector))
     End Sub
 
-    Public Function Detect(ByRef UserInput As String) As Boolean Implements Emotion.Detect
+    Public Function Detect(ByRef UserInput As String) As Boolean Implements IEmotion.Detect
         Dim found As Boolean = False
         For Each Detector As String In Detectors
             If UCase(UserInput).Contains(UCase(Detector)) = True Then
@@ -868,23 +868,23 @@ Public Class EmotionJealous
 End Class
 
 Public Class EmotionJoy
-    Implements Emotion
+    Implements IEmotion
 
     Private DetectorLst As New List(Of String)
 
-    Public ReadOnly Property Detectors As List(Of String) Implements Emotion.Detectors
+    Public ReadOnly Property Detectors As List(Of String) Implements IEmotion.Detectors
         Get
             Return DetectorLst
         End Get
     End Property
 
-    Public ReadOnly Property Name As String Implements Emotion.Name
+    Public ReadOnly Property Name As String Implements IEmotion.Name
         Get
             Return "Joy"
         End Get
     End Property
 
-    Public ReadOnly Property Type As EmotionType Implements Emotion.Type
+    Public ReadOnly Property Type As EmotionType Implements IEmotion.Type
         Get
             Return EmotionType.Joy
         End Get
@@ -928,11 +928,11 @@ Public Class EmotionJoy
 
     End Sub
 
-    Public Sub AddDetector(ByRef Detector As String) Implements Emotion.AddDetector
+    Public Sub AddDetector(ByRef Detector As String) Implements IEmotion.AddDetector
         DetectorLst.Add(UCase(Detector))
     End Sub
 
-    Public Function Detect(ByRef UserInput As String) As Boolean Implements Emotion.Detect
+    Public Function Detect(ByRef UserInput As String) As Boolean Implements IEmotion.Detect
         Dim found As Boolean = False
         For Each Detector As String In Detectors
             If UCase(UserInput).Contains(UCase(Detector)) = True Then
@@ -947,23 +947,23 @@ Public Class EmotionJoy
 End Class
 
 Public Class EmotionLaughing
-    Implements Emotion
+    Implements IEmotion
 
     Private DetectorLst As New List(Of String)
 
-    Public ReadOnly Property Detectors As List(Of String) Implements Emotion.Detectors
+    Public ReadOnly Property Detectors As List(Of String) Implements IEmotion.Detectors
         Get
             Return DetectorLst
         End Get
     End Property
 
-    Public ReadOnly Property Name As String Implements Emotion.Name
+    Public ReadOnly Property Name As String Implements IEmotion.Name
         Get
             Return "Laughing"
         End Get
     End Property
 
-    Public ReadOnly Property Type As EmotionType Implements Emotion.Type
+    Public ReadOnly Property Type As EmotionType Implements IEmotion.Type
         Get
             Return EmotionType.Laughing
         End Get
@@ -996,11 +996,11 @@ Public Class EmotionLaughing
 
     End Sub
 
-    Public Sub AddDetector(ByRef Detector As String) Implements Emotion.AddDetector
+    Public Sub AddDetector(ByRef Detector As String) Implements IEmotion.AddDetector
         DetectorLst.Add(UCase(Detector))
     End Sub
 
-    Public Function Detect(ByRef UserInput As String) As Boolean Implements Emotion.Detect
+    Public Function Detect(ByRef UserInput As String) As Boolean Implements IEmotion.Detect
         Dim found As Boolean = False
         For Each Detector As String In Detectors
             If UCase(UserInput).Contains(UCase(Detector)) = True Then
@@ -1015,23 +1015,23 @@ Public Class EmotionLaughing
 End Class
 
 Public Class EmotionLove
-    Implements Emotion
+    Implements IEmotion
 
     Private DetectorLst As New List(Of String)
 
-    Public ReadOnly Property Detectors As List(Of String) Implements Emotion.Detectors
+    Public ReadOnly Property Detectors As List(Of String) Implements IEmotion.Detectors
         Get
             Return DetectorLst
         End Get
     End Property
 
-    Public ReadOnly Property Name As String Implements Emotion.Name
+    Public ReadOnly Property Name As String Implements IEmotion.Name
         Get
             Return "Love"
         End Get
     End Property
 
-    Public ReadOnly Property Type As EmotionType Implements Emotion.Type
+    Public ReadOnly Property Type As EmotionType Implements IEmotion.Type
         Get
             Return EmotionType.Love
         End Get
@@ -1073,11 +1073,11 @@ Public Class EmotionLove
 
     End Sub
 
-    Public Sub AddDetector(ByRef Detector As String) Implements Emotion.AddDetector
+    Public Sub AddDetector(ByRef Detector As String) Implements IEmotion.AddDetector
         DetectorLst.Add(UCase(Detector))
     End Sub
 
-    Public Function Detect(ByRef UserInput As String) As Boolean Implements Emotion.Detect
+    Public Function Detect(ByRef UserInput As String) As Boolean Implements IEmotion.Detect
         Dim found As Boolean = False
         For Each Detector As String In Detectors
             If UCase(UserInput).Contains(UCase(Detector)) = True Then
@@ -1092,23 +1092,23 @@ Public Class EmotionLove
 End Class
 
 Public Class EmotionSad
-    Implements Emotion
+    Implements IEmotion
 
     Private DetectorLst As New List(Of String)
 
-    Public ReadOnly Property Detectors As List(Of String) Implements Emotion.Detectors
+    Public ReadOnly Property Detectors As List(Of String) Implements IEmotion.Detectors
         Get
             Return DetectorLst
         End Get
     End Property
 
-    Public ReadOnly Property Name As String Implements Emotion.Name
+    Public ReadOnly Property Name As String Implements IEmotion.Name
         Get
             Return "Sad"
         End Get
     End Property
 
-    Public ReadOnly Property Type As EmotionType Implements Emotion.Type
+    Public ReadOnly Property Type As EmotionType Implements IEmotion.Type
         Get
             Return EmotionType.Sad
         End Get
@@ -1159,11 +1159,11 @@ Public Class EmotionSad
 
     End Sub
 
-    Public Sub AddDetector(ByRef Detector As String) Implements Emotion.AddDetector
+    Public Sub AddDetector(ByRef Detector As String) Implements IEmotion.AddDetector
         DetectorLst.Add(UCase(Detector))
     End Sub
 
-    Public Function Detect(ByRef UserInput As String) As Boolean Implements Emotion.Detect
+    Public Function Detect(ByRef UserInput As String) As Boolean Implements IEmotion.Detect
         Dim found As Boolean = False
         For Each Detector As String In Detectors
             If UCase(UserInput).Contains(UCase(Detector)) = True Then
@@ -1178,23 +1178,23 @@ Public Class EmotionSad
 End Class
 
 Public Class EmotionSerious
-    Implements Emotion
+    Implements IEmotion
 
     Private DetectorLst As New List(Of String)
 
-    Public ReadOnly Property Detectors As List(Of String) Implements Emotion.Detectors
+    Public ReadOnly Property Detectors As List(Of String) Implements IEmotion.Detectors
         Get
             Return DetectorLst
         End Get
     End Property
 
-    Public ReadOnly Property Name As String Implements Emotion.Name
+    Public ReadOnly Property Name As String Implements IEmotion.Name
         Get
             Return "Serious"
         End Get
     End Property
 
-    Public ReadOnly Property Type As EmotionType Implements Emotion.Type
+    Public ReadOnly Property Type As EmotionType Implements IEmotion.Type
         Get
             Return EmotionType.Serious
         End Get
@@ -1326,11 +1326,11 @@ Public Class EmotionSerious
 
     End Sub
 
-    Public Sub AddDetector(ByRef Detector As String) Implements Emotion.AddDetector
+    Public Sub AddDetector(ByRef Detector As String) Implements IEmotion.AddDetector
         DetectorLst.Add(UCase(Detector))
     End Sub
 
-    Public Function Detect(ByRef UserInput As String) As Boolean Implements Emotion.Detect
+    Public Function Detect(ByRef UserInput As String) As Boolean Implements IEmotion.Detect
         Dim found As Boolean = False
         For Each Detector As String In Detectors
             If UCase(UserInput).Contains(UCase(Detector)) = True Then
@@ -1345,23 +1345,23 @@ Public Class EmotionSerious
 End Class
 
 Public Class EmotionSleepy
-    Implements Emotion
+    Implements IEmotion
 
     Private DetectorLst As New List(Of String)
 
-    Public ReadOnly Property Detectors As List(Of String) Implements Emotion.Detectors
+    Public ReadOnly Property Detectors As List(Of String) Implements IEmotion.Detectors
         Get
             Return DetectorLst
         End Get
     End Property
 
-    Public ReadOnly Property Name As String Implements Emotion.Name
+    Public ReadOnly Property Name As String Implements IEmotion.Name
         Get
             Return "Sleepy"
         End Get
     End Property
 
-    Public ReadOnly Property Type As EmotionType Implements Emotion.Type
+    Public ReadOnly Property Type As EmotionType Implements IEmotion.Type
         Get
             Return EmotionType.Sleepy
         End Get
@@ -1408,11 +1408,11 @@ Public Class EmotionSleepy
 
     End Sub
 
-    Public Sub AddDetector(ByRef Detector As String) Implements Emotion.AddDetector
+    Public Sub AddDetector(ByRef Detector As String) Implements IEmotion.AddDetector
         DetectorLst.Add(UCase(Detector))
     End Sub
 
-    Public Function Detect(ByRef UserInput As String) As Boolean Implements Emotion.Detect
+    Public Function Detect(ByRef UserInput As String) As Boolean Implements IEmotion.Detect
         Dim found As Boolean = False
         For Each Detector As String In Detectors
             If UCase(UserInput).Contains(UCase(Detector)) = True Then
@@ -1427,23 +1427,23 @@ Public Class EmotionSleepy
 End Class
 
 Public Class EmotionSuprised
-    Implements Emotion
+    Implements IEmotion
 
     Private DetectorLst As New List(Of String)
 
-    Public ReadOnly Property Detectors As List(Of String) Implements Emotion.Detectors
+    Public ReadOnly Property Detectors As List(Of String) Implements IEmotion.Detectors
         Get
             Return DetectorLst
         End Get
     End Property
 
-    Public ReadOnly Property Name As String Implements Emotion.Name
+    Public ReadOnly Property Name As String Implements IEmotion.Name
         Get
             Return "Suprised"
         End Get
     End Property
 
-    Public ReadOnly Property Type As EmotionType Implements Emotion.Type
+    Public ReadOnly Property Type As EmotionType Implements IEmotion.Type
         Get
             Return EmotionType.Surprised
         End Get
@@ -1504,11 +1504,11 @@ Public Class EmotionSuprised
         DetectorLst.Add("I HAVE LOVE FOR YOU ")
     End Sub
 
-    Public Sub AddDetector(ByRef Detector As String) Implements Emotion.AddDetector
+    Public Sub AddDetector(ByRef Detector As String) Implements IEmotion.AddDetector
         DetectorLst.Add(UCase(Detector))
     End Sub
 
-    Public Function Detect(ByRef UserInput As String) As Boolean Implements Emotion.Detect
+    Public Function Detect(ByRef UserInput As String) As Boolean Implements IEmotion.Detect
         Dim found As Boolean = False
         For Each Detector As String In Detectors
             If UCase(UserInput).Contains(UCase(Detector)) = True Then
