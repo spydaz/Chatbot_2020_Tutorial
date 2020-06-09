@@ -80,6 +80,24 @@
     <Compile Include="AI_AgentModel.vb" />
     <Compile Include="ApplicationEvents.vb" />
     <Compile Include="Emotion_Handler.vb" />
+    <Compile Include="FormMind_QA.Designer.vb">
+      <DependentUpon>FormMind_QA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMind_QA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPluginManager.designer.vb">
+      <DependentUpon>FormPluginManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormPluginManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQA_Mind.Designer.vb">
+      <DependentUpon>FormQA_Mind.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormQA_Mind.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form_Chat_UI.designer.vb">
       <DependentUpon>Form_Chat_UI.vb</DependentUpon>
     </Compile>
@@ -91,6 +109,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>MindQADataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Plugins.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -118,6 +137,15 @@
     <Compile Include="SyS.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FormMind_QA.resx">
+      <DependentUpon>FormMind_QA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPluginManager.resx">
+      <DependentUpon>FormPluginManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQA_Mind.resx">
+      <DependentUpon>FormQA_Mind.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_Chat_UI.resx">
       <DependentUpon>Form_Chat_UI.vb</DependentUpon>
     </EmbeddedResource>

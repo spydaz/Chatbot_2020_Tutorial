@@ -31,8 +31,9 @@ Partial Class Form_Chat_UI
         Me.Button_Enter = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.ButtonQA_Mind = New System.Windows.Forms.Button()
+        Me.ButtonCreatePlugin = New System.Windows.Forms.Button()
+        Me.ButtonMindQA = New System.Windows.Forms.Button()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -43,7 +44,7 @@ Partial Class Form_Chat_UI
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextIn.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextIn.Location = New System.Drawing.Point(13, 188)
-        Me.TextIn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextIn.Margin = New System.Windows.Forms.Padding(2)
         Me.TextIn.Name = "TextIn"
         Me.TextIn.Size = New System.Drawing.Size(509, 32)
         Me.TextIn.TabIndex = 0
@@ -54,7 +55,7 @@ Partial Class Form_Chat_UI
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextOut.BackColor = System.Drawing.SystemColors.Info
         Me.TextOut.Location = New System.Drawing.Point(224, 19)
-        Me.TextOut.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextOut.Margin = New System.Windows.Forms.Padding(2)
         Me.TextOut.Multiline = True
         Me.TextOut.Name = "TextOut"
         Me.TextOut.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
@@ -70,7 +71,7 @@ Partial Class Form_Chat_UI
         Me.Button_Enter.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button_Enter.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button_Enter.Location = New System.Drawing.Point(535, 192)
-        Me.Button_Enter.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button_Enter.Margin = New System.Windows.Forms.Padding(2)
         Me.Button_Enter.Name = "Button_Enter"
         Me.Button_Enter.Size = New System.Drawing.Size(75, 28)
         Me.Button_Enter.TabIndex = 2
@@ -91,8 +92,9 @@ Partial Class Form_Chat_UI
         '
         Me.GroupBox2.BackColor = System.Drawing.Color.Black
         Me.GroupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.GroupBox2.Controls.Add(Me.Button1)
-        Me.GroupBox2.Controls.Add(Me.TextBox1)
+        Me.GroupBox2.Controls.Add(Me.ButtonCreatePlugin)
+        Me.GroupBox2.Controls.Add(Me.ButtonMindQA)
+        Me.GroupBox2.Controls.Add(Me.ButtonQA_Mind)
         Me.GroupBox2.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.GroupBox2.ForeColor = System.Drawing.Color.White
         Me.GroupBox2.Location = New System.Drawing.Point(0, 236)
@@ -100,32 +102,40 @@ Partial Class Form_Chat_UI
         Me.GroupBox2.Size = New System.Drawing.Size(620, 42)
         Me.GroupBox2.TabIndex = 4
         Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Script"
+        Me.GroupBox2.Text = "Tools"
         '
-        'Button1
+        'ButtonQA_Mind
         '
-        Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button1.BackColor = System.Drawing.Color.Black
-        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.Button1.Font = New System.Drawing.Font("Comic Sans MS", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(535, 15)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 7
-        Me.Button1.Text = "Execute"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.ButtonQA_Mind.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonQA_Mind.ForeColor = System.Drawing.Color.Black
+        Me.ButtonQA_Mind.Location = New System.Drawing.Point(123, 14)
+        Me.ButtonQA_Mind.Name = "ButtonQA_Mind"
+        Me.ButtonQA_Mind.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonQA_Mind.TabIndex = 8
+        Me.ButtonQA_Mind.Text = "QA Mind"
+        Me.ButtonQA_Mind.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'ButtonCreatePlugin
         '
-        Me.TextBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(24, 15)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(498, 22)
-        Me.TextBox1.TabIndex = 6
+        Me.ButtonCreatePlugin.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonCreatePlugin.ForeColor = System.Drawing.Color.Black
+        Me.ButtonCreatePlugin.Location = New System.Drawing.Point(13, 14)
+        Me.ButtonCreatePlugin.Name = "ButtonCreatePlugin"
+        Me.ButtonCreatePlugin.Size = New System.Drawing.Size(104, 23)
+        Me.ButtonCreatePlugin.TabIndex = 8
+        Me.ButtonCreatePlugin.Text = "Create Plug-in"
+        Me.ButtonCreatePlugin.UseVisualStyleBackColor = True
+        '
+        'ButtonMindQA
+        '
+        Me.ButtonMindQA.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonMindQA.ForeColor = System.Drawing.Color.Black
+        Me.ButtonMindQA.Location = New System.Drawing.Point(204, 14)
+        Me.ButtonMindQA.Name = "ButtonMindQA"
+        Me.ButtonMindQA.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonMindQA.TabIndex = 8
+        Me.ButtonMindQA.Text = "Mind QA"
+        Me.ButtonMindQA.UseVisualStyleBackColor = True
         '
         'Form_Chat_UI
         '
@@ -143,7 +153,7 @@ Partial Class Form_Chat_UI
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Form_Chat_UI"
@@ -154,7 +164,6 @@ Partial Class Form_Chat_UI
         Me.Text = "Form_Chat_UI"
         Me.TransparencyKey = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -165,6 +174,7 @@ Partial Class Form_Chat_UI
     Friend WithEvents Button_Enter As Button
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents ButtonCreatePlugin As Button
+    Friend WithEvents ButtonMindQA As Button
+    Friend WithEvents ButtonQA_Mind As Button
 End Class

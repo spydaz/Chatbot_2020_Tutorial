@@ -70,6 +70,19 @@ Public Class Form_Chat_UI
             Me.Location = Newpoint
         End If
     End Sub
+    Dim MindQA As New FormMind_QA
+
+    Private Sub ButtonMindQA_Click(sender As Object, e As EventArgs) Handles ButtonMindQA.Click
+        MindQA.Show()
+    End Sub
+    Dim QAMind As New FormQA_Mind
+    Private Sub ButtonQA_Mind_Click(sender As Object, e As EventArgs) Handles ButtonQA_Mind.Click
+        QAMind.Show()
+    End Sub
+    Dim PM As New FormPluginManager
+    Private Sub ButtonCreatePlugin_Click(sender As Object, e As EventArgs) Handles ButtonCreatePlugin.Click
+        PM.Show()
+    End Sub
 
     Private Sub GroupBox2_DoubleClick(sender As Object, e As EventArgs) Handles GroupBox2.DoubleClick
         GroupBox2.Height = If(GroupBox2.Height <> 20, 20, 50)
