@@ -79,6 +79,7 @@
   <ItemGroup>
     <Compile Include="AI_AgentModel.vb" />
     <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Emotion_Handler.vb" />
     <Compile Include="Form_Chat_UI.designer.vb">
       <DependentUpon>Form_Chat_UI.vb</DependentUpon>
     </Compile>
@@ -113,6 +114,7 @@
     <Compile Include="SplashScreen.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Emotional_States.vb" />
     <Compile Include="SyS.vb" />
   </ItemGroup>
   <ItemGroup>
