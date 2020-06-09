@@ -70,23 +70,33 @@
                 MakeEmotionalResponse = "" & LCase(FoundEmotion) & " "
         End Select
     End Function
-    Private Sub SetEmotionState(ByRef UserInput As String)
+
+    Private Sub ResetStateCounters()
         'Reset Counters
         StateChanged = False
         DetectedState = EmotionType.Neutral
         StateDetected = False
+    End Sub
+    Private Sub SetCurrentQuotient()
+        'Check if neutral - Then reduce current Quotient
+        If Handler.DetectedEmotion = EmotionType.Neutral Then
+            CurrentQuotient -= 1
+            If CurrentQuotient = 0 Then
+                CurrentState = EmotionType.Neutral
+            Else
+            End If
+        End If
+    End Sub
+
+    Private Handler As New EmotionHandler
+
+    Private Sub SetEmotionState(ByRef UserInput As String)
+        ResetStateCounters()
 
         'Start - Emotion Test
-        Dim Handler As New EmotionHandler
         If Handler.DetectEmotion(UserInput) = True Then
-            'Check if neutral - Then reduce current Quotient
-            If Handler.DetectedEmotion = EmotionType.Neutral Then
-                CurrentQuotient -= 1
-                If CurrentQuotient = 0 Then
-                    CurrentState = EmotionType.Neutral
-                Else
-                End If
-            End If
+
+            SetCurrentQuotient()
 
             'Get State
             DetectedState = Handler.DetectedEmotion
@@ -94,6 +104,8 @@
             'IF State is the same Increase Intensity
             If DetectedState = CurrentState Then
                 CurrentQuotient += 1
+                CurrentStateStr = Handler.DetectedEmotionStr
+                CurrentState = DetectedState
             Else
                 'IF State is the differnt then change
                 CurrentStateStr = Handler.DetectedEmotionStr

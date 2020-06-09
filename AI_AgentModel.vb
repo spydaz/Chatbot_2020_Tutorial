@@ -2,8 +2,8 @@
 Imports AI_Contracts
 Public Class AI_AgentModel
     'ShortTerm Memory
-    Private PreviousResponses As List(Of String)
-    Private PreviousUserInputs As List(Of String)
+    Private PreviousResponses As New List(Of String)
+    Private PreviousUserInputs As New List(Of String)
 
     'Working Memory 
     Public PreviousResponse As String
@@ -27,7 +27,10 @@ Public Class AI_AgentModel
         'IF NO RESPONSE TRY -  Question Answer Database
         If GET_RESPONSE = "" Then GetQAResponse(UserInput, GET_RESPONSE)
         'TRY EMOTIONAL RESPONSE
-        If GET_RESPONSE = "" And Sentiment.NewEmotionDetected(UserInput) = True Then Sentiment.MakeEmotionalResponse()
+        If GET_RESPONSE = "" And Sentiment.NewEmotionDetected(UCase(UserInput)) = True Then
+            GET_RESPONSE = Sentiment.MakeEmotionalResponse()
+        End If
+
         'IF No Response Fallback Response
         If GET_RESPONSE = "" Then GET_RESPONSE = "Excuse me? Please, Rephrase?"
 
