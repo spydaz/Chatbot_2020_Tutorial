@@ -1,11 +1,11 @@
 ﻿Imports System.IO
-
+Imports System.speech
 
 ''' <summary>
 ''' This is the Main Communications Center
 ''' </summary>
 Public Class Form_Chat_UI
-
+    Private Speechout As Speech.Synthesis.SpeechSynthesizer
     Public Newpoint As New Point
 
     'Methods for form positioning
@@ -29,8 +29,15 @@ Public Class Form_Chat_UI
         End Get
 
     End Property
+    Public Sub EffectActuators(ByRef Text As String)
+        If Loaded = True Then
 
+            Speechout.Speak(Text)
+        End If
+
+    End Sub
     Public Sub DISPLAYOUTPUT(ByRef NewText As String)
+        EffectActuators(NewText)
         TextOut.Text += "User: " & mInputText & vbNewLine & "AI: " & NewText & vbNewLine
     End Sub
 
