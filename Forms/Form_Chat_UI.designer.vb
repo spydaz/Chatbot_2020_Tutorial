@@ -31,9 +31,9 @@ Partial Class Form_Chat_UI
         Me.Button_Enter = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.ButtonQA_Mind = New System.Windows.Forms.Button()
         Me.ButtonCreatePlugin = New System.Windows.Forms.Button()
         Me.ButtonMindQA = New System.Windows.Forms.Button()
+        Me.ButtonQA_Mind = New System.Windows.Forms.Button()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -43,10 +43,10 @@ Partial Class Form_Chat_UI
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextIn.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextIn.Location = New System.Drawing.Point(13, 188)
-        Me.TextIn.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextIn.Location = New System.Drawing.Point(17, 231)
+        Me.TextIn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextIn.Name = "TextIn"
-        Me.TextIn.Size = New System.Drawing.Size(509, 32)
+        Me.TextIn.Size = New System.Drawing.Size(677, 38)
         Me.TextIn.TabIndex = 0
         '
         'TextOut
@@ -54,12 +54,12 @@ Partial Class Form_Chat_UI
         Me.TextOut.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextOut.BackColor = System.Drawing.SystemColors.Info
-        Me.TextOut.Location = New System.Drawing.Point(224, 19)
-        Me.TextOut.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextOut.Location = New System.Drawing.Point(299, 23)
+        Me.TextOut.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextOut.Multiline = True
         Me.TextOut.Name = "TextOut"
         Me.TextOut.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.TextOut.Size = New System.Drawing.Size(386, 161)
+        Me.TextOut.Size = New System.Drawing.Size(513, 197)
         Me.TextOut.TabIndex = 1
         '
         'Button_Enter
@@ -70,10 +70,10 @@ Partial Class Form_Chat_UI
         Me.Button_Enter.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button_Enter.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button_Enter.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button_Enter.Location = New System.Drawing.Point(535, 192)
-        Me.Button_Enter.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button_Enter.Location = New System.Drawing.Point(713, 236)
+        Me.Button_Enter.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button_Enter.Name = "Button_Enter"
-        Me.Button_Enter.Size = New System.Drawing.Size(75, 28)
+        Me.Button_Enter.Size = New System.Drawing.Size(100, 34)
         Me.Button_Enter.TabIndex = 2
         Me.Button_Enter.Text = "Talk"
         Me.Button_Enter.UseVisualStyleBackColor = False
@@ -82,9 +82,11 @@ Partial Class Form_Chat_UI
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.Black
         Me.GroupBox1.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.GroupBox1.Location = New System.Drawing.Point(10, 11)
+        Me.GroupBox1.Location = New System.Drawing.Point(13, 14)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(209, 168)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(279, 207)
         Me.GroupBox1.TabIndex = 3
         Me.GroupBox1.TabStop = False
         '
@@ -97,31 +99,23 @@ Partial Class Form_Chat_UI
         Me.GroupBox2.Controls.Add(Me.ButtonQA_Mind)
         Me.GroupBox2.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.GroupBox2.ForeColor = System.Drawing.Color.White
-        Me.GroupBox2.Location = New System.Drawing.Point(0, 236)
+        Me.GroupBox2.Location = New System.Drawing.Point(0, 290)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(620, 42)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox2.Size = New System.Drawing.Size(827, 52)
         Me.GroupBox2.TabIndex = 4
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Tools"
-        '
-        'ButtonQA_Mind
-        '
-        Me.ButtonQA_Mind.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonQA_Mind.ForeColor = System.Drawing.Color.Black
-        Me.ButtonQA_Mind.Location = New System.Drawing.Point(123, 14)
-        Me.ButtonQA_Mind.Name = "ButtonQA_Mind"
-        Me.ButtonQA_Mind.Size = New System.Drawing.Size(75, 23)
-        Me.ButtonQA_Mind.TabIndex = 8
-        Me.ButtonQA_Mind.Text = "QA Mind"
-        Me.ButtonQA_Mind.UseVisualStyleBackColor = True
         '
         'ButtonCreatePlugin
         '
         Me.ButtonCreatePlugin.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonCreatePlugin.ForeColor = System.Drawing.Color.Black
-        Me.ButtonCreatePlugin.Location = New System.Drawing.Point(13, 14)
+        Me.ButtonCreatePlugin.Location = New System.Drawing.Point(17, 17)
+        Me.ButtonCreatePlugin.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ButtonCreatePlugin.Name = "ButtonCreatePlugin"
-        Me.ButtonCreatePlugin.Size = New System.Drawing.Size(104, 23)
+        Me.ButtonCreatePlugin.Size = New System.Drawing.Size(139, 28)
         Me.ButtonCreatePlugin.TabIndex = 8
         Me.ButtonCreatePlugin.Text = "Create Plug-in"
         Me.ButtonCreatePlugin.UseVisualStyleBackColor = True
@@ -130,21 +124,34 @@ Partial Class Form_Chat_UI
         '
         Me.ButtonMindQA.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonMindQA.ForeColor = System.Drawing.Color.Black
-        Me.ButtonMindQA.Location = New System.Drawing.Point(204, 14)
+        Me.ButtonMindQA.Location = New System.Drawing.Point(272, 17)
+        Me.ButtonMindQA.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ButtonMindQA.Name = "ButtonMindQA"
-        Me.ButtonMindQA.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonMindQA.Size = New System.Drawing.Size(100, 28)
         Me.ButtonMindQA.TabIndex = 8
         Me.ButtonMindQA.Text = "Mind QA"
         Me.ButtonMindQA.UseVisualStyleBackColor = True
         '
+        'ButtonQA_Mind
+        '
+        Me.ButtonQA_Mind.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonQA_Mind.ForeColor = System.Drawing.Color.Black
+        Me.ButtonQA_Mind.Location = New System.Drawing.Point(164, 17)
+        Me.ButtonQA_Mind.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ButtonQA_Mind.Name = "ButtonQA_Mind"
+        Me.ButtonQA_Mind.Size = New System.Drawing.Size(100, 28)
+        Me.ButtonQA_Mind.TabIndex = 8
+        Me.ButtonQA_Mind.Text = "QA Mind"
+        Me.ButtonQA_Mind.UseVisualStyleBackColor = True
+        '
         'Form_Chat_UI
         '
         Me.AcceptButton = Me.Button_Enter
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
-        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(620, 278)
+        Me.BackgroundImage = Global.Chatbot_2020_Tutorial.My.Resources.Resources.BluPrint
+        Me.ClientSize = New System.Drawing.Size(827, 342)
         Me.Controls.Add(Me.TextIn)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
@@ -153,7 +160,7 @@ Partial Class Form_Chat_UI
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Form_Chat_UI"

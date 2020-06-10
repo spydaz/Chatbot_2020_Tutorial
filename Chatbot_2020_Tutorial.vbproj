@@ -201,6 +201,14 @@
     <Content Include="Plugins\SamplePlugin.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\Right.jpg" />
+    <None Include="Resources\Left.jpg" />
+    <None Include="Resources\Console_D.jpg" />
+    <None Include="Resources\Console A.jpg" />
+    <None Include="Resources\BluPrint.png" />
+    <None Include="Resources\Blue_end_right.gif" />
+    <None Include="Resources\Blue_end_left.gif" />
+    <None Include="Resources\Bar2.PNG" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
