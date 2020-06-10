@@ -127,7 +127,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Source\DB_QuestionAnswer.vb" />
+    <Compile Include="Source\DatabaseManager_QuestionAnswer.vb" />
     <Compile Include="Forms\SplashScreen.Designer.vb">
       <DependentUpon>SplashScreen.vb</DependentUpon>
     </Compile>

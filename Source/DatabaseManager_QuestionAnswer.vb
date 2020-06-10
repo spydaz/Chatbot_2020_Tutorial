@@ -1,6 +1,6 @@
 ﻿
 
-Module QuestionAnswer
+Module DatabaseManager_QuestionAnswer
     ''' <summary>
     ''' Gets a response From the Question and Answer Database
     ''' Checking Both Tables
