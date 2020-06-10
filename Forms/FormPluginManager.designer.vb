@@ -54,7 +54,6 @@ Partial Class FormPluginManager
         Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripButtonCompilePlugin = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripButtonTestPlugins = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButtonCloseTab = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripButtonHelp = New System.Windows.Forms.ToolStripButton()
@@ -328,7 +327,7 @@ Partial Class FormPluginManager
         Me.ToolStripMainMenu.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.ToolStripMainMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ToolStripMainMenu.ImageScalingSize = New System.Drawing.Size(60, 60)
-        Me.ToolStripMainMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripLabel3, Me.ToolStripSeparator5, Me.ToolStripButtonNewPlugin, Me.ToolStripSeparator1, Me.ToolStripButtonLoadPlugin, Me.ToolStripSplitButton1, Me.ToolStripButtonSavePlugin, Me.ToolStripSeparator2, Me.ToolStripButtonCompilePlugin, Me.ToolStripSeparator3, Me.ToolStripButtonTestPlugins, Me.ToolStripButtonCloseTab, Me.ToolStripSeparator4, Me.ToolStripButtonHelp, Me.ToolStripSeparator6, Me.ToolStripLabel2})
+        Me.ToolStripMainMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripLabel3, Me.ToolStripSeparator5, Me.ToolStripButtonNewPlugin, Me.ToolStripSeparator1, Me.ToolStripButtonLoadPlugin, Me.ToolStripSplitButton1, Me.ToolStripButtonSavePlugin, Me.ToolStripSeparator2, Me.ToolStripButtonCompilePlugin, Me.ToolStripSeparator3, Me.ToolStripButtonCloseTab, Me.ToolStripSeparator4, Me.ToolStripButtonHelp, Me.ToolStripSeparator6, Me.ToolStripLabel2})
         Me.ToolStripMainMenu.Location = New System.Drawing.Point(4, 28)
         Me.ToolStripMainMenu.Name = "ToolStripMainMenu"
         Me.ToolStripMainMenu.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional
@@ -348,9 +347,10 @@ Partial Class FormPluginManager
         'ToolStripButtonNewPlugin
         '
         Me.ToolStripButtonNewPlugin.Font = New System.Drawing.Font("Comic Sans MS", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStripButtonNewPlugin.Image = Global.Chatbot_2020_Tutorial.My.Resources.Resources.Blue_end_left
         Me.ToolStripButtonNewPlugin.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButtonNewPlugin.Name = "ToolStripButtonNewPlugin"
-        Me.ToolStripButtonNewPlugin.Size = New System.Drawing.Size(105, 27)
+        Me.ToolStripButtonNewPlugin.Size = New System.Drawing.Size(165, 27)
         Me.ToolStripButtonNewPlugin.Text = "New Plugin"
         '
         'ToolStripSeparator1
@@ -361,9 +361,10 @@ Partial Class FormPluginManager
         'ToolStripButtonLoadPlugin
         '
         Me.ToolStripButtonLoadPlugin.Font = New System.Drawing.Font("Comic Sans MS", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStripButtonLoadPlugin.Image = Global.Chatbot_2020_Tutorial.My.Resources.Resources.Blue_end_left
         Me.ToolStripButtonLoadPlugin.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButtonLoadPlugin.Name = "ToolStripButtonLoadPlugin"
-        Me.ToolStripButtonLoadPlugin.Size = New System.Drawing.Size(106, 27)
+        Me.ToolStripButtonLoadPlugin.Size = New System.Drawing.Size(166, 27)
         Me.ToolStripButtonLoadPlugin.Text = "Load Plugin"
         '
         'ToolStripSplitButton1
@@ -374,9 +375,10 @@ Partial Class FormPluginManager
         'ToolStripButtonSavePlugin
         '
         Me.ToolStripButtonSavePlugin.Font = New System.Drawing.Font("Comic Sans MS", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStripButtonSavePlugin.Image = Global.Chatbot_2020_Tutorial.My.Resources.Resources.Blue_end_left
         Me.ToolStripButtonSavePlugin.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButtonSavePlugin.Name = "ToolStripButtonSavePlugin"
-        Me.ToolStripButtonSavePlugin.Size = New System.Drawing.Size(108, 27)
+        Me.ToolStripButtonSavePlugin.Size = New System.Drawing.Size(168, 27)
         Me.ToolStripButtonSavePlugin.Text = "Save Plugin"
         '
         'ToolStripSeparator2
@@ -387,9 +389,10 @@ Partial Class FormPluginManager
         'ToolStripButtonCompilePlugin
         '
         Me.ToolStripButtonCompilePlugin.Font = New System.Drawing.Font("Comic Sans MS", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStripButtonCompilePlugin.Image = Global.Chatbot_2020_Tutorial.My.Resources.Resources.Blue_end_left
         Me.ToolStripButtonCompilePlugin.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButtonCompilePlugin.Name = "ToolStripButtonCompilePlugin"
-        Me.ToolStripButtonCompilePlugin.Size = New System.Drawing.Size(131, 27)
+        Me.ToolStripButtonCompilePlugin.Size = New System.Drawing.Size(191, 27)
         Me.ToolStripButtonCompilePlugin.Text = "Compile Plugin"
         '
         'ToolStripSeparator3
@@ -397,20 +400,13 @@ Partial Class FormPluginManager
         Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
         Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 30)
         '
-        'ToolStripButtonTestPlugins
-        '
-        Me.ToolStripButtonTestPlugins.Font = New System.Drawing.Font("Comic Sans MS", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ToolStripButtonTestPlugins.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButtonTestPlugins.Name = "ToolStripButtonTestPlugins"
-        Me.ToolStripButtonTestPlugins.Size = New System.Drawing.Size(115, 27)
-        Me.ToolStripButtonTestPlugins.Text = "Test Plugins"
-        '
         'ToolStripButtonCloseTab
         '
         Me.ToolStripButtonCloseTab.Font = New System.Drawing.Font("Comic Sans MS", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStripButtonCloseTab.Image = Global.Chatbot_2020_Tutorial.My.Resources.Resources.Blue_end_left
         Me.ToolStripButtonCloseTab.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButtonCloseTab.Name = "ToolStripButtonCloseTab"
-        Me.ToolStripButtonCloseTab.Size = New System.Drawing.Size(97, 27)
+        Me.ToolStripButtonCloseTab.Size = New System.Drawing.Size(157, 27)
         Me.ToolStripButtonCloseTab.Text = "Close Tab"
         Me.ToolStripButtonCloseTab.ToolTipText = "Close Tab"
         '
@@ -422,9 +418,10 @@ Partial Class FormPluginManager
         'ToolStripButtonHelp
         '
         Me.ToolStripButtonHelp.Font = New System.Drawing.Font("Comic Sans MS", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStripButtonHelp.Image = Global.Chatbot_2020_Tutorial.My.Resources.Resources.Blue_end_left
         Me.ToolStripButtonHelp.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButtonHelp.Name = "ToolStripButtonHelp"
-        Me.ToolStripButtonHelp.Size = New System.Drawing.Size(57, 27)
+        Me.ToolStripButtonHelp.Size = New System.Drawing.Size(117, 27)
         Me.ToolStripButtonHelp.Text = "Help"
         '
         'ToolStripSeparator6
@@ -854,5 +851,4 @@ Partial Class FormPluginManager
     Friend WithEvents TextBoxPluginFileName As TextBox
     Friend WithEvents GroupBox15 As GroupBox
     Friend WithEvents TreeViewObjectSyntax As TreeView
-    Friend WithEvents ToolStripButtonTestPlugins As ToolStripButton
 End Class

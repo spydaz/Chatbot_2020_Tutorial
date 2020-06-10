@@ -87,12 +87,13 @@ Partial Class FormMind_QA
         '
         'GroupBox1
         '
+        Me.GroupBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.GroupBox1.Controls.Add(Me.MindQADataGridView)
         Me.GroupBox1.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.GroupBox1.Location = New System.Drawing.Point(0, 165)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Size = New System.Drawing.Size(1179, 447)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
@@ -105,7 +106,7 @@ Partial Class FormMind_QA
         Me.MindQADataGridView.DataSource = Me.MindQABindingSource
         Me.MindQADataGridView.Dock = System.Windows.Forms.DockStyle.Fill
         Me.MindQADataGridView.Location = New System.Drawing.Point(4, 19)
-        Me.MindQADataGridView.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.MindQADataGridView.Margin = New System.Windows.Forms.Padding(4)
         Me.MindQADataGridView.Name = "MindQADataGridView"
         Me.MindQADataGridView.RowHeadersWidth = 51
         Me.MindQADataGridView.Size = New System.Drawing.Size(1171, 424)
@@ -269,7 +270,7 @@ Partial Class FormMind_QA
         Me.QUESTIONTextBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.QUESTIONTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.MindQABindingSource, "QUESTION", True))
         Me.QUESTIONTextBox.Location = New System.Drawing.Point(167, 73)
-        Me.QUESTIONTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.QUESTIONTextBox.Margin = New System.Windows.Forms.Padding(4)
         Me.QUESTIONTextBox.Name = "QUESTIONTextBox"
         Me.QUESTIONTextBox.Size = New System.Drawing.Size(968, 22)
         Me.QUESTIONTextBox.TabIndex = 5
@@ -279,7 +280,7 @@ Partial Class FormMind_QA
         Me.AnswerTextBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.AnswerTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.MindQABindingSource, "Answer", True))
         Me.AnswerTextBox.Location = New System.Drawing.Point(167, 105)
-        Me.AnswerTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.AnswerTextBox.Margin = New System.Windows.Forms.Padding(4)
         Me.AnswerTextBox.Name = "AnswerTextBox"
         Me.AnswerTextBox.Size = New System.Drawing.Size(968, 22)
         Me.AnswerTextBox.TabIndex = 7
@@ -297,7 +298,7 @@ Partial Class FormMind_QA
         Me.Controls.Add(Me.MindQABindingNavigator)
         Me.Controls.Add(Me.GroupBox1)
         Me.DoubleBuffered = True
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "FormMind_QA"
         Me.Text = "Question & Answers MindQA"
         Me.GroupBox1.ResumeLayout(False)

@@ -201,6 +201,7 @@
     <Content Include="Plugins\SamplePlugin.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\Logo_UFP.jpg" />
     <None Include="Resources\Right.jpg" />
     <None Include="Resources\Left.jpg" />
     <None Include="Resources\Console_D.jpg" />
