@@ -1,48 +1,16 @@
-# Chatbot_2020_Tutorial
-2020 Tutorial - Basic Chatbot design - WIth External Plugins
+## CHAT BOT CREATION TUTORIAL 2020
 
-This has been created in stages ; Relases have been provided with source code; 
+In this model I have created a basic AI Interface with External plugin abilities; An Interface AI_Contracts enables for Intefacing with the AI; Implementing the Interface and placing in the the compiled DLL into the APP\Plugins folder enables for the AI_Interface to discover and call the plugin obtaining a response to be returned to the user; The project was design in 4 stages ; Each stage or milestone enables for the development and extension of the Chatbot to become a enriched product worthy of public release; 
 
-This AI Gives a basic framework and design ; 
+## STAGE 1 - Designing and building the interface:
 
-Containing a basic Question and Answer Database; And Data Editor;
+Here the interface is given a basic design for input and output via text; 
+Maintaining history of the CHAT; this interface enables for the basic testing of the interface; An avatar has not been added; this is also due to the avatar not being essential but cosmetic; The first stage we focus mainly on producing a functional interface;
 
-A AI framework has been provided to allow for external plugin interfacing as well as a Compiler to script and Compile Plugins for use; String/Math Extension methods etc;
+### AI_CONTRACTS: 
+This is the mechanisim where we will enable for the USER to design scripts which can be executed b the AI; In the begining stage; PRoviding the mecanisim is the key focus. the intial Interface used Only provides the structure of the class needed to be implemented; the user function will be called by the main script for all objects of this type found at the specified location. this enables for extensive extenability. Here is also a point of which Extensions and Internal functions or an AI framwork can be provided to the user for use as helper scripts.
 
-A Sentiment / Emotional State machine has been created giving an example of it could be implemented; (A generic response has been provided to allow for Emotional recognition)
+In the first Release of the AI a sample plugin will also be created to enable for testing of the interface. SAMPLE_PLUGIN this will also provide a template for further plgin creation; 
 
-
-
-
-## Stage 1 :
-
-Create Chatbot Userinterface.
-
-Create Plugin Interface
-
-Create BrainController
-
-Create Plugin
-
-## Stage 2 :
-Create Question and Answer Database For internal brain function
-
-create Internal Function 
-
-## Stage 3 : 
-Create STATE MACHINE
-
--Emotional States
-
--Previous Memory State (Update Inteface (AI_CONTRACTS))
-
-
-## Stage 4 : 
-Create Data Editor
-Create Plugin Compiler
-
-## Future Works?
-
-Further Interface Development - Implementation of Dialog System(Slot Filling / Intent Managment) - And Detect/Respond System For Customised Topic Detection; 
-
-
+## STAGE 2 -Creating an internal memory -:
+At this stage we create an internal memory function, by providing a Question and Answer database. here Simple Question and Answer style responses can be created giving a starting point for users of the Application. Although there are implementations where each Turn is saved to the database. in this iteration it is chosen to be more focused towards a SUPERVISED Method. A database Editor will need to be provided. Yet this will be provided at a later stage; The Order of execution will be PLUGINS First then Question and Answer Second Allowing for the prioritizing of response discovery.  
