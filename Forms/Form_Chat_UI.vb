@@ -5,7 +5,7 @@ Imports System.speech
 ''' This is the Main Communications Center
 ''' </summary>
 Public Class Form_Chat_UI
-    Private Speechout As Speech.Synthesis.SpeechSynthesizer
+    Private Speechout As New Speech.Synthesis.SpeechSynthesizer
     Public Newpoint As New Point
 
     'Methods for form positioning
