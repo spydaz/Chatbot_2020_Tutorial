@@ -77,31 +77,32 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AI_AgentModel.vb" />
-    <Compile Include="ApplicationEvents.vb" />
-    <Compile Include="Emotion_Handler.vb" />
-    <Compile Include="FormMind_QA.Designer.vb">
+    <Compile Include="Source\AI_AgentModel.vb" />
+    <Compile Include="Source\ApplicationEvents.vb" />
+    <Compile Include="Source\Emotional_StateMachine.vb" />
+    <Compile Include="Source\Emotion_Handler.vb" />
+    <Compile Include="Forms\FormMind_QA.Designer.vb">
       <DependentUpon>FormMind_QA.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormMind_QA.vb">
+    <Compile Include="Forms\FormMind_QA.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormPluginManager.designer.vb">
+    <Compile Include="Forms\FormPluginManager.designer.vb">
       <DependentUpon>FormPluginManager.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormPluginManager.vb">
+    <Compile Include="Forms\FormPluginManager.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormQA_Mind.Designer.vb">
+    <Compile Include="Forms\FormQA_Mind.Designer.vb">
       <DependentUpon>FormQA_Mind.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormQA_Mind.vb">
+    <Compile Include="Forms\FormQA_Mind.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_Chat_UI.designer.vb">
+    <Compile Include="Forms\Form_Chat_UI.designer.vb">
       <DependentUpon>Form_Chat_UI.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form_Chat_UI.vb">
+    <Compile Include="Forms\Form_Chat_UI.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MindQADataSet.Designer.vb">
@@ -109,7 +110,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>MindQADataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Plugins.vb" />
+    <Compile Include="Source\PluginManager.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -126,27 +127,27 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="QuestionAnswer.vb" />
-    <Compile Include="SplashScreen.Designer.vb">
+    <Compile Include="Source\DB_QuestionAnswer.vb" />
+    <Compile Include="Forms\SplashScreen.Designer.vb">
       <DependentUpon>SplashScreen.vb</DependentUpon>
     </Compile>
-    <Compile Include="SplashScreen.vb">
+    <Compile Include="Forms\SplashScreen.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Emotional_States.vb" />
-    <Compile Include="SyS.vb" />
+    <Compile Include="Source\Emotional_States.vb" />
+    <Compile Include="Source\SyS.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="FormMind_QA.resx">
+    <EmbeddedResource Include="Forms\FormMind_QA.resx">
       <DependentUpon>FormMind_QA.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormPluginManager.resx">
+    <EmbeddedResource Include="Forms\FormPluginManager.resx">
       <DependentUpon>FormPluginManager.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormQA_Mind.resx">
+    <EmbeddedResource Include="Forms\FormQA_Mind.resx">
       <DependentUpon>FormQA_Mind.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_Chat_UI.resx">
+    <EmbeddedResource Include="Forms\Form_Chat_UI.resx">
       <DependentUpon>Form_Chat_UI.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -155,7 +156,7 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="SplashScreen.resx">
+    <EmbeddedResource Include="Forms\SplashScreen.resx">
       <DependentUpon>SplashScreen.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>

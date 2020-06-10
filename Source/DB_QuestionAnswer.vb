@@ -1,6 +1,13 @@
 ﻿
 
 Module QuestionAnswer
+    ''' <summary>
+    ''' Gets a response From the Question and Answer Database
+    ''' Checking Both Tables
+    ''' </summary>
+    ''' <param name="UserInput"></param>
+    ''' <param name="Response"></param>
+    ''' <returns></returns>
     Public Function GetQAResponse(ByRef UserInput As String, ByRef Response As String) As Boolean
         GetQAResponse = False
         If DetectAnswerMindQA(UCase(UserInput), Response) = True Then
@@ -14,7 +21,12 @@ Module QuestionAnswer
         End If
 
     End Function
-
+    ''' <summary>
+    ''' Check MIND_QA TABLE - Given Question Answer is determined
+    ''' </summary>
+    ''' <param name="Question"></param>
+    ''' <param name="Answer"></param>
+    ''' <returns>If true Answer is populated</returns>
     Public Function DetectAnswerMindQA(ByRef Question As String, ByRef Answer As String) As Boolean
         Dim Knowledge As List(Of TopicQuestion) = GetMindQA()
         DetectAnswerMindQA = False
@@ -26,6 +38,12 @@ Module QuestionAnswer
             End If
         Next
     End Function
+    ''' <summary>
+    ''' Check MINDQA - Given Question Answer is populated
+    ''' </summary>
+    ''' <param name="Question"></param>
+    ''' <param name="Answer"></param>
+    ''' <returns>If True Answer is populated</returns>
     Public Function DetectAnswerQAMind(ByRef Question As String, ByRef Answer As String) As Boolean
         Dim Knowledge As List(Of TopicQuestion) = GetQAMind()
         DetectAnswerQAMind = False
@@ -59,6 +77,9 @@ Module QuestionAnswer
         End Using
         Return DbSubjectLst
     End Function
+    ''' <summary>
+    ''' Used to retrive Table from QA TABLES
+    ''' </summary>
     Private Structure TopicQuestion
         ''' <summary>
         ''' Question Associated with topic (can be used as a Flat response) or Can be used to

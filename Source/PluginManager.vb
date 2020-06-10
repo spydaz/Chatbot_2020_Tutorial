@@ -1,6 +1,6 @@
 ﻿Imports AI_Contracts
 
-Module Plugins
+Module PluginManager
 #Region "Plugins"
     Public PLUGIN_FOLDER As String = Application.StartupPath & "\Plugins"
 

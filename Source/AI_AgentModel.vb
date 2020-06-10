@@ -12,7 +12,7 @@ Public Class AI_AgentModel
     Public Response As String
 
 
-    Public Sentiment As New Emotional_State
+    Public Sentiment As New Emotional_StateMachine
 
     'Responses Are Genearated Externally
 #Region "Responses"
