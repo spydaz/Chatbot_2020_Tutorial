@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package>
+	<metadata>
+		<id>SpydazWeb.AI.CONTRACTS</id>
+		<title>AI_CONTRACTS</title>
+		<version>2.0</version>
+		<authors>Leroy "Spydaz" Dyer</authors>
+		<owners>Leroy Dyer</owners>
+		<copyright>SpydazWeb AI</copyright>
+		<description>Plugin Mechanisim for Chatbot Devlopementment</description>
+		<license type="expression">Apache-2.0</license>
+		<releaseNotes>This release contains the following changes...</releaseNotes>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<Language>English</Language>
+		<Summary><Summary/>
+		<ProjectUrl>Http//www.spydazweb.co.uk</ProjectUrl>
+	</metadata>
+<files>
+	<file src="lib\AI_CONTRACTS.dll" target="lib\AI_CONTRACTS.dll" />
+</files>
+</package>

@@ -9,11 +9,11 @@ Imports System.Runtime.InteropServices
 ' Review the values of the assembly attributes
 
 <Assembly: AssemblyTitle("AI_Contracts")>
-<Assembly: AssemblyDescription("Plugin Module")>
-<Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("AI_Contracts")>
-<Assembly: AssemblyCopyright("Copyright ©  2020")>
-<Assembly: AssemblyTrademark("")>
+<Assembly: AssemblyDescription("Chatbot Plugin Module gives the user the ability to add a plugin module for you chatbot application")>
+<Assembly: AssemblyCompany("SpydazWeb AI Creations")>
+<Assembly: AssemblyProduct("SpydazWeb Chatbot Plugin Interface")>
+<Assembly: AssemblyCopyright("SpydazWeb AI Creations Copyright ©  2020")>
+<Assembly: AssemblyTrademark("SpydazWeb AI Creations TM ©  2020")>
 
 <Assembly: ComVisible(True)>
 

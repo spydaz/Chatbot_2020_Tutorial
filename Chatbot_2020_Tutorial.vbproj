@@ -185,12 +185,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="AI_Contracts\AI_Contracts.vbproj">
-      <Project>{ffd99faf-eae8-41aa-beaa-66cedf5c5951}</Project>
-      <Name>AI_Contracts</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Icon_AI_Brain.ico" />
     <Content Include="Icon_SpydazBrain.ico" />
     <Content Include="Data\MindQA.accdb">
@@ -212,6 +206,11 @@
     <None Include="Resources\Blue_end_left.gif" />
     <None Include="Resources\Bar2.PNG" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="AI_Contracts\AI_Contracts.vbproj">
+      <Project>{ffd99faf-eae8-41aa-beaa-66cedf5c5951}</Project>
+      <Name>AI_Contracts</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
