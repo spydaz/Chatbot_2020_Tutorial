@@ -38,3 +38,10 @@ The refactoring process and Commenting enables for later editing and refineing o
 Speech will also be required to provide a Rich UI, Although Speech recognition has improved over time; It will be added mainly for Speech out. 
 #### Graphics
 Some Graphical Improvemnts and themeing will be added to the APP: (Perhaps LCARS _ Star trek Design!)
+
+##Stage 6: AI_CONTRACTS to NUGET:
+For the deployement and centralized access for the AI_Contracts Component: It was also decided to centralize the Library with NUGET as SpydazWb.AI.Contracts ; This enables for further updates to be centralized for plugin creation and optimal delivery :
+At this point The AI_Contracts SourceCode has also been removed from the Project and ADDED as a NUGET refference assemblie; 
+The AI_Contracts Project can now be developed Seperately from the UI and Plugins; Plugins may also be deployed as Nuget Packages on a centralized source seprately from Nuget; ie Centralized website!
+
+
