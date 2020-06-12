@@ -51,6 +51,10 @@
     <ApplicationIcon>Icon_SpydazBrain.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AI_CONTRACTS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\SpydazWeb.AI.CONTRACTS.3.0.0\lib\AI_CONTRACTS.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -196,6 +200,7 @@
     <Content Include="Plugins\SamplePlugin.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="packages.config" />
     <None Include="Resources\Logo_UFP.jpg" />
     <None Include="Resources\Right.jpg" />
     <None Include="Resources\Left.jpg" />
@@ -205,12 +210,6 @@
     <None Include="Resources\Blue_end_right.gif" />
     <None Include="Resources\Blue_end_left.gif" />
     <None Include="Resources\Bar2.PNG" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="AI_Contracts\AI_Contracts.vbproj">
-      <Project>{ffd99faf-eae8-41aa-beaa-66cedf5c5951}</Project>
-      <Name>AI_Contracts</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
