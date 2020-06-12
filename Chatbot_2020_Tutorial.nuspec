@@ -1,18 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?>
-<package >
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
-    <id>$id$</id>
-    <version>$version$</version>
-    <title>$title$</title>
-    <authors>$author$</authors>
-    <owners>$author$</owners>
+    <id>SpydazWeb.Basic.Chatbot.2020</id>
+    <version>1.0.0</version>
+    <title>SpydazWeb Basic Chatbot2020</title>
+    <authors>Leroy "Spydaz" Dyer</authors>
+    <owners>Leroy "Spydaz" Dyer</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
-    <projectUrl>http://project_url_here_or_delete_this_line/</projectUrl>
-    <iconUrl>http://icon_url_here_or_delete_this_line/</iconUrl>
-    <description>$description$</description>
+    <projectUrl>https://github.com/spydaz/Chatbot_2020_Tutorial</projectUrl>
+    <description>Basic Chatbot with plugins 2020</description>
     <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
     <copyright>Copyright 2020</copyright>
-    <tags>Tag1 Tag2</tags>
+    <tags>SpydazWeb Spydaz AI chatbot 2020</tags>
+    <dependencies>
+      <dependency id="SpydazWeb.AI.CONTRACTS" version="3.0.0" />
+    </dependencies>
   </metadata>
+  <files>
+    <file src="content\Data\MindQA.accdb" target="content\Data\MindQA.accdb" />
+    <file src="content\Plugins\AI_CONTRACTS.dll" target="content\Plugins\AI_CONTRACTS.dll" />
+    <file src="content\Plugins\SamplePlugin.dll" target="content\Plugins\SamplePlugin.dll" />
+    <file src="content\Chatbot_2020_Tutorial.exe" target="content\Chatbot_2020_Tutorial.exe" />
+  </files>
 </package>
