@@ -7,7 +7,7 @@ In this model I have created a basic AI Interface with External plugin abilities
 Here the interface is given a basic design for input and output via text; 
 Maintaining history of the CHAT; this interface enables for the basic testing of the interface; An avatar has not been added; this is also due to the avatar not being essential but cosmetic; The first stage we focus mainly on producing a functional interface;
 
-### AI_CONTRACTS: 
+### AI_CONTRACTS: Migrated to Nuget! SpydazWeb.AI.CONTRACTS 3.0
 This is the mechanisim where we will enable for the USER to design scripts which can be executed b the AI; In the begining stage; PRoviding the mecanisim is the key focus. the intial Interface used Only provides the structure of the class needed to be implemented; the user function will be called by the main script for all objects of this type found at the specified location. this enables for extensive extenability. Here is also a point of which Extensions and Internal functions or an AI framwork can be provided to the user for use as helper scripts.
 
 In the first Release of the AI a sample plugin will also be created to enable for testing of the interface. SAMPLE_PLUGIN this will also provide a template for further plugin creation; 
