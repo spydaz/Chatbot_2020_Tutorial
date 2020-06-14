@@ -47,6 +47,7 @@ Public Class AI_AgentModel
 
     Public Sub New(ByRef Path As String)
         PLUGIN_FOLDER = Path
+
     End Sub
     Public Sub New()
 

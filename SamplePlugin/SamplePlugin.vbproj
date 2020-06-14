@@ -50,7 +50,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AI_CONTRACTS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SpydazWeb.AI.CONTRACTS.3.0.0\lib\AI_CONTRACTS.dll</HintPath>
+      <HintPath>..\packages\SpydazWeb.AI.CONTRACTS.4.0.0\lib\AI_CONTRACTS.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.ACTIVEHAPTEKXLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SpydazWeb.AI.CONTRACTS.4.0.0\lib\AxInterop.ACTIVEHAPTEKXLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.ACTIVEHAPTEKXLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SpydazWeb.AI.CONTRACTS.4.0.0\lib\Interop.ACTIVEHAPTEKXLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -115,6 +122,9 @@
     </None>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Newtonsoft.Json.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

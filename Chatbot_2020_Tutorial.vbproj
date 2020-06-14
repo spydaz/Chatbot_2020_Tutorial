@@ -52,8 +52,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AI_CONTRACTS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\SpydazWeb.AI.CONTRACTS.3.0.0\lib\AI_CONTRACTS.dll</HintPath>
+      <HintPath>packages\SpydazWeb.AI.CONTRACTS.4.0.0\lib\AI_CONTRACTS.dll</HintPath>
       <Private>True</Private>
+    </Reference>
+    <Reference Include="AxInterop.ACTIVEHAPTEKXLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\SpydazWeb.AI.CONTRACTS.4.0.0\lib\AxInterop.ACTIVEHAPTEKXLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.ACTIVEHAPTEKXLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\SpydazWeb.AI.CONTRACTS.4.0.0\lib\Interop.ACTIVEHAPTEKXLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -194,6 +201,7 @@
     <Content Include="Data\MindQA.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Newtonsoft.Json.dll" />
     <Content Include="Plugins\AI_Contracts.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
